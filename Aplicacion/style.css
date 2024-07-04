@@ -618,6 +618,16 @@ a {
                 }
             }
         }
+
+        .tamanos-fuente {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: var(--small-gap);
+            & article {
+                width: 49%;
+            }
+        }
     }
 
     @media screen and (min-width: 961px) and (max-width: 1024px) {
@@ -654,6 +664,16 @@ a {
                 & .grado {
                     font-size: 12px;
                 }
+            }
+        }
+
+        .tamanos-fuente {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: var(--small-gap);
+            & article {
+                width: 49%;
             }
         }
     }
@@ -694,6 +714,17 @@ a {
                 }
             }
         }
+
+        .tamanos-fuente {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: var(--small-gap);
+            & article {
+                width: 49%;
+            }
+        }
+
     }
 
     @media screen and (min-width: 1281px) and (max-width: 1366px) {
@@ -730,6 +761,16 @@ a {
                 & .grado {
                     font-size: 16px;
                 }
+            }
+        }
+
+        .tamanos-fuente {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: var(--small-gap);
+            & article {
+                width: 49%;
             }
         }
     }
@@ -770,6 +811,16 @@ a {
                 }
             }
         }
+
+        .tamanos-fuente {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: var(--small-gap);
+            & article {
+                width: 30%;
+            }
+        }
     }
 
     @media screen and (min-width: 1441px) and (max-width: 1920px) {
@@ -808,6 +859,16 @@ a {
                 }
             }
         }
+
+        .tamanos-fuente {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: var(--small-gap);
+            & article {
+                width: 32%;
+            }
+        }
     }
 
     @media screen and (min-width: 1921px) {
@@ -844,6 +905,16 @@ a {
                 & .grado {
                     font-size: 28px;
                 }
+            }
+        }
+
+        .tamanos-fuente {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: var(--small-gap);
+            & article {
+                width: 32%;
             }
         }
     }
