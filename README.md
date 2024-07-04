@@ -136,9 +136,11 @@
 
 ## Fuente
 
-``
+
+```css
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-``
+```
+
 ## Íconos
 
 Todos los íconos utilizados en el diseño deben provenir de una fuente open-source.
@@ -147,6 +149,4 @@ Todos los íconos utilizados en el diseño deben provenir de una fuente open-sou
 
 ## Imágenes
 
-- Utilizar los logotipos de la institución.
-
-[Identidad Gráfica de la Institución](https://sites.google.com/itcelaya.edu.mx/comunicacion-y-difusion/identidad-gr%C3%A1fica?authuser=0#h.h0el5olgihme)
+- Utilizar los logotipos de la institución [Identidad Gráfica de la Institución](https://sites.google.com/itcelaya.edu.mx/comunicacion-y-difusion/identidad-gr%C3%A1fica?authuser=0#h.h0el5olgihme)
