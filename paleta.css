@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /*Tipografia*/
+    --font-family: 'Montserrat', sans-serif;
+
+    /* Color Primario */
+    --midnight-blue-50: #eff8ff;
+    --midnight-blue-100: #daf0ff;
+    --midnight-blue-200: #bee5ff;
+    --midnight-blue-300: #91d6ff;
+    --midnight-blue-400: #5dbdfd;
+    --midnight-blue-500: #379efa;
+    --midnight-blue-600: #2180ef;
+    --midnight-blue-700: #1969dc;
+    --midnight-blue-800: #1b55b2;
+    --midnight-blue-900: #1c4a8c;
+    --midnight-blue-950: #1b396a;
+
+    /* Color Neutral */
+    --vulcan-50: #f5f7fa;
+    --vulcan-100: #eaedf4;
+    --vulcan-200: #d1d9e6;
+    --vulcan-300: #a9b9d0;
+    --vulcan-400: #7b94b5;
+    --vulcan-500: #5a769d;
+    --vulcan-600: #465e83;
+    --vulcan-700: #3a4c6a;
+    --vulcan-800: #334259;
+    --vulcan-900: #2e394c;
+    --vulcan-950: #171c26;
+
+    /* acentos */
+    --keppel-50: #f2fbf9;
+    --keppel-100: #d2f5ee;
+    --keppel-200: #a5eadf;
+    --keppel-300: #70d8ca;
+    --keppel-400: #3caea3;
+    --keppel-500: #29a399;
+    --keppel-600: #1f827c;
+    --keppel-700: #1c6965;
+    --keppel-800: #1b5452;
+    --keppel-900: #1b4644;
+    --keppel-950: #0a2829;
+
+    --dandelion-50: #fefbec;
+    --dandelion-100: #fcf3c9;
+    --dandelion-200: #f9e58e;
+    --dandelion-300: #f6d55c;
+    --dandelion-400: #f3bf2c;
+    --dandelion-500: #eca014;
+    --dandelion-600: #d17a0e;
+    --dandelion-700: #ae570f;
+    --dandelion-800: #8d4313;
+    --dandelion-900: #743813;
+    --dandelion-950: #431c05;
+
+    --pomegranate-50: #fef4f2;
+    --pomegranate-100: #fee6e2;
+    --pomegranate-200: #fed2ca;
+    --pomegranate-300: #fbb2a6;
+    --pomegranate-400: #f78572;
+    --pomegranate-500: #ed553b;
+    --pomegranate-600: #db4127;
+    --pomegranate-700: #b8341d;
+    --pomegranate-800: #982e1c;
+    --pomegranate-900: #7e2c1e;
+    --pomegranate-950: #45130a;
+
+}

@@ -1,0 +1,45 @@
+Apartado que voy a trabajar
+
+-Apartado Tutorias
+
+-Vista de tutor
+-Vista de coordinador
+-Vista de administrador
+
+
+Apartado de funcionalidades a cubrir
+
+Tutorías 
+
+- Los estudiantes pueden emitir una cita (fecha y hora) para una reunión con su tutor, ya sea presencial o virtual.
+- Los estudiantes pueden comunicarse con el tutor a través del chat grupal o individual.
+- Los estudiantes pueden asistir a eventos mostrados en el tablero de anuncios.
+- Los estudiantes pueden acceder a información sobre actividades para obtener créditos complementarios u otros beneficios.
+- Los estudiantes pueden enviar quejas y sugerencias a los administradores de tutorías.
+- Los tutores pueden subir archivos y materiales a su grupo, así como tomar asistencia en eventos.
+- Los tutores pueden comunicarse con los estudiantes a través del chat individual y grupal.
+- Los tutores pueden publicar documentos en un tablero para que los estudiantes los descarguen.
+- Los coordinadores de carrera pueden publicar anuncios y eventos en el tablero de anuncios.
+- Los tutores pueden enviar informes de asistencia de los estudiantes en eventos a los coordinadores.
+- Los coordinadores envían una agenda de actividades al administrador de tutorías.
+- El administrador puede asignar un coordinador de tutorías por carrera.
+
+
+Datos de interés de los roles de Tutorías:
+
+Alumno:
+Nombre
+No de control
+Carrera
+Semestre
+Correo
+No de teléfono
+
+
+Tutor, coordinador de carrera y administrador de tutorias:
+
+Nombre
+Correo electrónico
+No. telefónico
+Asesorías 
+Los estudiantes pueden consultar la información de los asesoramientos que se están impartiendo
