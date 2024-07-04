@@ -95,14 +95,136 @@ for (const key in palette) {
                     `).join('')}
                 </ul>
             </article>
-        <div class="separador-paleta"></div>
+        <div class="separador"></div>
     `;
 }
 
 document.querySelector('.paleta-colores').innerHTML = palette_component;
 
 
-// `<li>
-//                             <span class="color" style="background-color: ${palette[key]}"></span>
-//                             <span class="valor">${palette[key]}</span>
-//                         </li>`;
+// Seccion de iconos
+
+function createIconList(quantity) {
+    let icons = [];
+    for (let i = 1; i <= quantity; i++) {
+        icons.push(`icono-${i}.svg`);
+    }
+    return icons;
+    
+}
+
+let icons = createIconList(15);
+
+let icons_component = "";
+
+const folderIconsDirection = './iconos/';
+
+icons.forEach(icon => {
+    icons_component += `
+        <article>
+                <img src="${folderIconsDirection + icon}" alt="${icon}" class="iconos"/>
+        </article>
+    `;
+});
+
+icons_component += '<a href="https://fonts.google.com/icons" class="fuente-iconos">Fuente de los iconos</a>'
+
+document.querySelector('.conjunto-iconos').innerHTML = icons_component;
+
+
+// Seccion de tipografias
+
+const fonts = ['Montserrat'];
+
+const tamanios ={
+    'Teléfonos Pequeños': {
+        'titulo': '24px',
+        'subtitulo': '18px',
+        'texto': '14px'
+    },
+    'Teléfonos Medianos': {
+        'titulo': '26px',
+        'subtitulo': '20px',
+        'texto': '16px'
+    },
+    'Teléfonos Grandes': {
+        'titulo': '28px',
+        'subtitulo': '22px',
+        'texto': '18px'
+    },
+    'Tabletas Pequeñas': {
+        'titulo': '30px',
+        'subtitulo': '24px',
+        'texto': '18px'
+    },
+    'Tabletas Medianas': {
+        'titulo': '32px',
+        'subtitulo': '26px',
+        'texto': '20px'
+    },
+    'Tabletas Grandes': {
+        'titulo': '34px',
+        'subtitulo': '28px',
+        'texto': '20px'
+    },
+    'Escritorios Pequeños': {
+        'titulo': '36px',
+        'subtitulo': '30px',
+        'texto': '20px'
+    },
+    'Escritorios Medianos': {
+        'titulo': '38px',
+        'subtitulo': '32px',
+        'texto': '22px'
+    },
+    'Escritorios Grandes': {
+        'titulo': '40px',
+        'subtitulo': '34px',
+        'texto': '22px'
+    },
+    'Pantallas Anchas': {
+        'titulo': '44px',
+        'subtitulo': '36px',
+        'texto': '24px'
+    }
+};
+
+
+let fonts_component = "";
+
+fonts.forEach(font => {
+    fonts_component += `
+        <article>
+            <h2>${font}</h2>
+            <p class="texto">The
+                quick brown fox jumps over the lazy dog</p>
+        </article>
+    `;
+});
+
+document.querySelector('.tipografias').innerHTML = fonts_component;
+
+// Seccion de tamaños
+
+let tamanios_component = "";
+
+for (const key in tamanios) {
+    tamanios_component += `
+        <article>
+            <h2>${key}</h2>
+            <ul>
+                <li>
+                    <p class="titulo">Titulo: <span class="valor">${tamanios[key].titulo}</span></p>
+                </li>
+                <li>
+                    <p class="subtitulo">Subtitulo: <span class="valor">${tamanios[key].subtitulo}</span></p>
+                </li>
+                <li>
+                    <p class="texto">Texto: <span class="valor">${tamanios[key].texto}</span></p>
+                </li>
+            </ul>
+        </article>
+    `;
+}
+
+document.querySelector('.tamanos-fuente').innerHTML = tamanios_component;
