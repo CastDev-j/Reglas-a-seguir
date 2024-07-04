@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color Primario */
+    --midnight-blue-50: #eff8ff;
+    --midnight-blue-100: #daf0ff;
+    --midnight-blue-200: #bee5ff;
+    --midnight-blue-300: #91d6ff;
+    --midnight-blue-400: #5dbdfd;
+    --midnight-blue-500: #379efa;
+    --midnight-blue-600: #2180ef;
+    --midnight-blue-700: #1969dc;
+    --midnight-blue-800: #1b55b2;
+    --midnight-blue-900: #1c4a8c;
+    --midnight-blue-950: #1b396a;
+
+    /* Color Neutral */
+    --vulcan-50: #f5f7fa;
+    --vulcan-100: #eaedf4;
+    --vulcan-200: #d1d9e6;
+    --vulcan-300: #a9b9d0;
+    --vulcan-400: #7b94b5;
+    --vulcan-500: #5a769d;
+    --vulcan-600: #465e83;
+    --vulcan-700: #3a4c6a;
+    --vulcan-800: #334259;
+    --vulcan-900: #2e394c;
+    --vulcan-950: #171c26;
+
+    /* acentos */
+    --keppel-50: #f2fbf9;
+    --keppel-100: #d2f5ee;
+    --keppel-200: #a5eadf;
+    --keppel-300: #70d8ca;
+    --keppel-400: #3caea3;
+    --keppel-500: #29a399;
+    --keppel-600: #1f827c;
+    --keppel-700: #1c6965;
+    --keppel-800: #1b5452;
+    --keppel-900: #1b4644;
+    --keppel-950: #0a2829;
+
+    --dandelion-50: #fefbec;
+    --dandelion-100: #fcf3c9;
+    --dandelion-200: #f9e58e;
+    --dandelion-300: #f6d55c;
+    --dandelion-400: #f3bf2c;
+    --dandelion-500: #eca014;
+    --dandelion-600: #d17a0e;
+    --dandelion-700: #ae570f;
+    --dandelion-800: #8d4313;
+    --dandelion-900: #743813;
+    --dandelion-950: #431c05;
+
+    --pomegranate-50: #fef4f2;
+    --pomegranate-100: #fee6e2;
+    --pomegranate-200: #fed2ca;
+    --pomegranate-300: #fbb2a6;
+    --pomegranate-400: #f78572;
+    --pomegranate-500: #ed553b;
+    --pomegranate-600: #db4127;
+    --pomegranate-700: #b8341d;
+    --pomegranate-800: #982e1c;
+    --pomegranate-900: #7e2c1e;
+    --pomegranate-950: #45130a;
+
+    --corchetes : 28px; /*tamañó titulo + 4*/
+    --titulos: 24px;
+    --subtitulos: 22px;
+    --subsubtitulos: 18px;
+    --texto: 14px;
+
+    --ancho: 320px;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--vulcan-50);
+    color: var(--vulcan-950);
+
+}
+
+/*Apartado cabecera*/
+
+.cabecera {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 56px;
+
+    & ul {
+        padding: 10px;
+        height: 56px;
+
+        & li {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+    }
+
+    & .nombre-pagina {
+        font-size: var(--titulos);
+        font-weight: 600;
+    }
+
+    & .logotipo-aplicacion {
+        display: flex;
+        align-items: center;
+
+        width: 56px;
+        height: 56px;
+
+        margin-right: 10px;
+
+        letter-spacing: -1px;
+        font-weight: 500;
+    }
+
+    & .logotipo-aplicacion::after {
+        content: '}';
+        font-size: var(--corchetes)
+    }
+
+    & .logotipo-aplicacion::before {
+        content: '{';
+        font-size: var(--corchetes)
+    }
+
+
+    /*
+    Se creara este componennte despues
+    
+    & .boton-modo-oscuro{
+        display: none;
+    }
+    */
+
+    & .enlace-contacto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 8px 15px;
+        margin-right: 10px;
+
+        font-size: var(--texto);
+        font-weight: 600;
+
+        border-radius: 50px;
+        background-color: var(--midnight-blue-100);
+        color: var(--midnight-blue-950);
+
+        transition: background-color .3s, color .3s;
+
+    }
+
+    & .enlace-contacto:hover {
+        background-color: var(--midnight-blue-200);
+        color: var(--midnight-blue-950);
+    }
+
+    background-color: var(--vulcan-50);
+    border-bottom: 1px solid var(--vulcan-200);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--vulcan-950);
+}
+
+/*Apartado cuerpo*/
+
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: var(--ancho);
+
+}
+
+.titulos-secciones {
+    display: flex;
+    justify-content: center;
+
+    font-size: var(--subtitulos);
+    font-weight: 600;
+    margin-bottom: 0px;
+
+
+    background-color: var(--midnight-blue-50);
+    padding: 10px;
+    border-left: 5px solid var(--vulcan-200);
+
+    color: var(--vulcan-950);
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    text-align: center;
+
+    margin: 20px 0 30px;
+
+    & h1 {
+        font-size: var(--titulos);
+        font-weight: 600;
+    }
+
+    & p {
+
+        font-size: var(--texto);
+        font-weight: 400;
+    }
+
+}
+
+.paleta-colores {
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+
+    & article {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+
+        justify-content: space-between;
+        gap: 5px;
+
+        margin-bottom: 30px;
+        padding: 10px;
+
+        border-radius: 10px;
+
+        color: var(--vulcan-900);
+
+
+        & h2 {
+            font-size: var(--subsubtitulos);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        & ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            font-size: var(--texto);
+
+            & li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                width: 100%;
+
+                background-color: var(--bg-color);
+                color: var(--txt-color);
+
+                padding: 8px;
+                border-radius: 5px;
+
+                & .valor {
+                    letter-spacing: .02em;
+                }
+
+                & .grado {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+}
+
+.separador-paleta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 1px;
+    margin-bottom: 20px;
+
+
+    background-color: var(--vulcan-200);
+
+}
+
+
+
+
+/*
+tamaños inciales
+
+| **Dispositivo**            | **Resolución (px)** | **Título (px)** | **Subtítulo (px)** | **Texto (px)** |
+|----------------------------|---------------------|------------------|--------------------|----------------|
+| **Teléfonos Pequeños**     | 320 x 480           | 24 - 28          | 18 - 22            | 14 - 16        |
+
+
+*/
