@@ -136,11 +136,9 @@
 
 ## Fuente
 
-```css
---font-family: 'Montserrat', sans-serif;
-
+``
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+``
 ## Íconos
 
 Todos los íconos utilizados en el diseño deben provenir de una fuente open-source.
